@@ -1033,7 +1033,7 @@ if(!sbi_js_exists) {
         } else if (typeof window.Cookiebot !== "undefined") { // Cookiebot by Cybot A/S
           this.settings.consentGiven = Cookiebot.consented;
         } else if (typeof window.BorlabsCookie !== 'undefined') { // Borlabs Cookie by Borlabs
-          this.settings.consentGiven = window.BorlabsCookie.checkCookieConsent('instagram');
+          this.settings.consentGiven = typeof window.BorlabsCookie.Consents !== 'undefined' ? window.BorlabsCookie.Consents.hasConsent('instagram') : window.BorlabsCookie.checkCookieConsent('instagram');
         }
 
         var evt = jQuery.Event('sbicheckconsent');
