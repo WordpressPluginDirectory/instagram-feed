@@ -6,5 +6,5 @@ $vendorDir = dirname(__DIR__);
 $baseDir = dirname($vendorDir);
 
 return array(
-    'sb_ig_b1eb330aa001ae4915f07005b4e993c2' => $vendorDir . '/smashballoon/framework/Utilities/functions.php',
+    'b1eb330aa001ae4915f07005b4e993c2' => $vendorDir . '/smashballoon/framework/Utilities/functions.php',
 );
